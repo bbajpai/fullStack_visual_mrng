@@ -211,3 +211,28 @@ img:hover{
 }
 
 
+
+body{
+	background-color: red;
+}
+
+
+@media (min-width:900px){
+	body{
+		background-color: green;
+	}
+}
+
+@media (min-width:600px) and (max-width: 899px){
+	body{
+		background-color: yellow;
+	}
+
+}
+
+@media (max-width:599px){
+	body
+	{
+		background-color: blue;
+	}
+}
