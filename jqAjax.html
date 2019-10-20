@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+           <link href="style.css" rel="stylesheet" type="text/css"></link>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+       <h1 id="head1">List of Movies</h1>
+       <div id="box2"></div>
+       <button type="button" id="removeStyle" onclick="showMoviesList()">Show Movies</button>
+
+      
+        <script>
+          const movieUrl = "https://ngmovies.herokuapp.com/api/getMovies";
+
+          function showMoviesList(){
+
+            $.ajax({
+              url:movieUrl,
+              type:'GET',
+              dataType:'json',
+              success:function(data){
+                for(var i=0; i<data.length;i++){
+                  $('#box2').append("<p>"+data[i].name+"</p>")
+                }
+              }
+            })
+          }
+      
+       
+        </script>
+       
+    </body>
+</html>
+
+

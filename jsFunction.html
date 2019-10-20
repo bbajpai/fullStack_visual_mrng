@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+<!--         <script src="abc.js" type="text/javascript"></script>
+ -->    </head>
+
+    <body>
+
+        <div id="list1"></div>
+
+      <button type="button" id="calc"> Calculate Sum</button>
+        
+        <script>
+          var listResult= document.getElementById("list1");
+          var btnId = document.getElementById("calc");
+         function calculate(a,b){
+            var c =  a+b;
+            //listResult.innerHTML = c;
+         }
+
+
+         // Arrow function
+         var sum  = (a,b) =>{
+            return a+b;
+         }
+
+         //listResult.innerHTML = sum(40,50); // function calling in Arrow Function
+
+
+         //calculate(); // function calling
+
+        // btnId.addEventListener("click", sum(20,30))
+        </script>
+       
+    </body>
+</html>
+

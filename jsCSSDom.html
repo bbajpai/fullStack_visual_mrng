@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+           <link href="style.css" rel="stylesheet" type="text/css"></link>
+    </head>
+
+    <body>
+       
+       <h1 id="heading1">Hi !! this is JS</h1>
+       <div id="box2" onmouseover="onMouseOverDiv(this)" onmouseout="onMouseOutFromDiv(this)"></div>
+
+        <button type="button" onclick="changeHeadingStyle()">Click</button>
+        <script>
+
+            var headingHTML = document.getElementById("heading1");
+            var box = document.getElementById("box2");
+           
+            function changeHeadingStyle(){
+                 headingHTML.style.color = 'red';
+                 headingHTML.style.background = 'white';
+                 headingHTML.style.fontSize = '40px';
+            }
+
+            function onMouseOverDiv(divObj){
+                divObj.style.background = 'red';
+                divObj.innerHTML = ' Move Over'
+            }
+
+            function onMouseOutFromDiv(divObj){
+                 divObj.style.background = 'green';
+                 divObj.innerHTML = 'Mouse OUT'
+            }
+
+        </script>
+       
+    </body>
+</html>

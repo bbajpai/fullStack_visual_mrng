@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+           <link href="style.css" rel="stylesheet" type="text/css"></link>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+       
+       <p id="para1">This is a para</p>
+       <p class="demo">Second Para</p>
+       <p class="demo">Third Para</p>
+
+       <!-- <button id="hide">Click to Hide</button>
+
+       <button id="show">Click to Show</button> -->
+
+       <button id="toggle">Click to Toggle</button>
+
+
+      
+        <script>
+           //$(selector).action()
+           //$(para).click();
+
+           $(document).ready(function(){
+              // $("#hide").click(function(){
+              //     $(".demo").hide();
+              // });
+
+              // $("#show").click(function(){
+              //      $(".demo").show();
+              // });
+
+              $('#toggle').click(function(){
+                    $('.demo').toggle();
+              });
+
+
+           });
+       
+        </script>
+       
+    </body>
+</html>
+
+

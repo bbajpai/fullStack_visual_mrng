@@ -4,6 +4,11 @@
     background-color: #C15C1E;
 }
 
+.dynamicStyle{
+	color:#33759E;
+	background-color: #ffffff;
+}
+
 div{
 	width:100px;
 	height:100px;
@@ -212,7 +217,7 @@ img:hover{
 
 
 
-body{
+/*body{
 	background-color: red;
 }
 
@@ -235,4 +240,8 @@ body{
 	{
 		background-color: blue;
 	}
+}*/
+*/
+.navcolor{
+	background-color: #45B39D;
 }

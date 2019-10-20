@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+           <link href="style.css" rel="stylesheet" type="text/css"></link>
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+       <h1 id="head1">Slide down the div</h1>
+       <div id="box2"></div>
+
+       <button id="toggle">Click to Toggle</button>
+       <button id="changeStyle">Change style</button>
+       <button id="removeStyle">Remove style</button>
+
+      
+        <script>
+           //$(selector).action()
+           //$(para).click();
+
+           $(document).ready(function(){
+              $('#toggle').click(function(){
+                   $('#box2').fadeToggle(6000);
+                 });
+           
+              $('#head1').click(function(){
+                   $('#box2').slideToggle(10000);
+              });
+              $('#changeStyle').click(function(){
+                   $('#head1').addClass('dynamicStyle');
+              });
+
+              $('#removeStyle').click(function(){
+                   $('#head1').toggleClass('dynamicStyle');
+              });
+
+           });
+       
+        </script>
+       
+    </body>
+</html>
+
+

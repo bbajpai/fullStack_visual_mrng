@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+<!--         <script src="abc.js" type="text/javascript"></script>
+ -->    </head>
+
+    <body>
+        <h1>String length is  </h1>
+        <p id="result"></p>
+        <p id="pos"></p>
+        <p id="pos1"></p>
+        <script>
+            // creating an object/instance of para given ID =Result
+            var para = document.getElementById("result");
+            var paraPos = document.getElementById("pos");
+            var paraPos1 = document.getElementById("pos1");
+
+            var age = 20;
+            var stringValue = "Hey! I am using javascript. It is not similar to java     ";
+
+            var stringLength = stringValue.length;
+
+            var position = stringValue.indexOf("java");
+
+            var lastPosition = stringValue.lastIndexOf("java");
+
+            var subString = stringValue.slice(3);
+
+            var subString1 = stringValue.substring(4,10);
+
+            var subString2 = stringValue.substr(1, 10);
+
+
+
+
+           // var newString = stringValue.replace(/java/g,"HTML");
+
+          // var newString = stringValue.toLowerCase();
+
+
+
+            var newString = stringValue.trim();
+            var newLength = newString.length;
+            //paraPos.innerHTML = position;
+            paraPos.innerHTML = stringValue
+            //paraPos1.innerHTML = lastPosition;
+            paraPos1.innerHTML = subString;
+           // para.innerHTML = stringLength;
+           // para.innerHTML = subString2;
+            para.innerHTML = newString;
+            console.log("The string Length is "+ stringLength);
+             console.log("The new string Length is "+ newLength);
+
+
+
+            if(age >= 20){
+                console.log("You are eligible to VOTE")
+            }
+            else{
+                console.log("You are NOT eligible to VOTE")
+            }
+
+        </script>
+       
+    </body>
+</html>

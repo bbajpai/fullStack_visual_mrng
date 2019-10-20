@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    	<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Register Form</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="fname">First Name</label>
+                            <input type="text" class="form-control" id="fname">
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" class="form-control" id="lname">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Enter Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Enter Password</label>
+                            <input type="password" class="form-control" id="pass">
+                        </div>
+                        <label>Gender</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="male">Male
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="gender" value="female">Female
+                            </label>
+                        </div>
+
+                        <label>
+                            Prefered Location
+                        </label>
+                        <div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" name="prefLoc" value="loc1">Location 1</label>
+                            </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" name="prefLoc" value="loc2">Location 2</label>
+                            </label>
+                              <label class="checkbox-inline">
+                                <input type="checkbox" name="prefLoc" value="loc3">Location 3</label>
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Select Country</label>
+                            <select class="form-control">
+                                <option>---- Select Country</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>China</option>
+                                <option>Japan</option>
+                            </select>
+                        </div>
+                        <input type="submit" name="submit" class="btn btn-primary btn-block" value="Register">
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h3>Log In Form</h3>
+                    <form>
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </span>
+                            <input type="email" name="email" class="form-control"placeholder="Enter Email" />
+                        </div> 
+                         <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="glyphicon glyphicon-lock"></i>
+                            </span>
+                            <input type="password" name="pass" class="form-control"placeholder="Enter Password" />
+                        </div> 
+                         <input type="submit" name="submit" class="btn btn-danger btn-block" value="Log In">
+                    </form>
+                </div>
+            </div>
+    	</div>
+       
+    </body>
+</html>

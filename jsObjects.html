@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+<!--         <script src="abc.js" type="text/javascript"></script>
+ -->    </head>
+
+    <body>
+
+        <div id="list1"></div>
+
+     
+        
+        <script>
+               var chair ={
+                    color:"red",
+                    type:"round",
+                    material:"wood",
+                    review : function(){
+                        return "this is a good chair"
+                    }
+               }
+
+             var listResult= document.getElementById("list1");
+              listResult.innerHTML =  chair.review();
+                // Or
+              chair["color"]
+
+        </script>
+       
+    </body>
+</html>
+

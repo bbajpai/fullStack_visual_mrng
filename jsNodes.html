@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+           <link href="style.css" rel="stylesheet" type="text/css"></link>
+    </head>
+
+    <body>
+       <div id="box2">
+           
+       </div>
+
+      
+        <script>
+
+         var rootDiv = document.getElementById('box2');
+          var para1 = document.createElement('p'); //<p></p>
+          var textNode = document.createTextNode('This para is created dynamically'); //This para is created dynamically
+
+          //append textnode inside para
+          para1.appendChild(textNode) // <p> This para is created dynamically</p>
+          rootDiv.appendChild(para1);
+
+        </script>
+       
+    </body>
+</html>
